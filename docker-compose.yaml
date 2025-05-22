@@ -1,0 +1,11 @@
+name: portfolio
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /usr/portfolio/node_modules/
+      - .:/usr/portfolio/
+    ports:
+      - "3000:3000"
