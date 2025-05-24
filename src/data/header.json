@@ -1,0 +1,17 @@
+{
+  "logo": { "label": "logo", "href": "/", "variant": "logo" },
+  "navLinks": [
+    { "id": 1, "label": "Home", "href": "/" },
+    { "id": 2, "label": "Projects", "href": "/projects" },
+    { "id": 3, "label": "About", "href": "/about" },
+    { "id": 4, "label": "Contact", "href": "/contact" }
+  ],
+  "resume": {
+    "label": "Resume",
+    "href": "/resume.pdf",
+    "variant": "download",
+    "download": true,
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  }
+}
