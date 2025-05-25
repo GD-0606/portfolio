@@ -10,8 +10,8 @@ const Header = () => {
   const { logo, navLinks, resume } = headerNavLinks;
 
   return (
-    <header className="w-11/12 m-auto border">
-      <nav className="flex justify-between items-center text-light-slate font-mono">
+    <header className="w-full h-[100px] fixed top-0  px-[50px] z-20">
+      <nav className="relative w-full h-[100px] flex justify-between items-center text-light-slate font-mono">
         <Logo {...(logo as NavLinkProps)} />
         <NavLinks navLinks={navLinks as NavLinkProps[]} resume={resume as NavLinkProps} />
         <Menubar />

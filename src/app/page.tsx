@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <>
-      <div>Hello World.</div>
+      <section className="w-full min-h-screen py-[100px]">section1</section>
+      <section className="w-full min-h-screen py-[100px]">section2</section>
     </>
   );
 }

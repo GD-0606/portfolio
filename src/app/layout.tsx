@@ -12,9 +12,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-navy text-slate text-xl`}>
-        <Header />
-        {children}
+      <body>
+        <div id="root" className="relative">
+          <div id="layout" className="relative flex flex-col min-h-screen">
+            <Header />
+            <aside className="fixed w-[40px] left-[40px] bottom-0 right-auto z-10">1</aside>
+            <aside className="fixed w-[40px] right-[40px] bottom-0 left-auto z-10 text-right">2</aside>
+            <div id="content" className="relative">
+              <main className="relative w-full min-h-screen px-[150px]">{children}</main>
+              <footer className="relative h-auto min-h-[70px] flex flex-col justify-center items-center p-[15px]">
+                <div>footer</div>
+              </footer>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
