@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
   h1,
@@ -35,6 +35,7 @@
   --color-green-tint: rgba(100, 255, 218, 0.1);
   --color-pink: #f57dff;
   --color-blue: #57cbff;
+  --color-header: rgba(10, 25, 47, 0.85);
   --text-*: initial;
   --text-xxs: 12px;
   --text-xs: 13px;
@@ -49,8 +50,18 @@
   --text-number-heading: clamp(26px, 5vw, var(--text-heading));
   --leading-*: initial;
   --leading-1.3: 1.3;
+  --breakpoint-*: initial;
+  --breakpoint-mobileS: 330px;
+  --breakpoint-mobileM: 400px;
+  --breakpoint-mobileL: 480px;
+  --breakpoint-tabletS: 640px;
+  --breakpoint-tabletL: 768px;
+  --breakpoint-desktopXS: 900px;
+  --breakpoint-desktopS: 1024px;
+  --breakpoint-desktopM: 1280px;
+  --breakpoint-desktopL: 1536px;
   --ease-easing: cubic-bezier(0.645, 0.045, 0.355, 1);
-  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
 
 html {
@@ -68,6 +79,7 @@ body {
   color: var(--color-slate);
   font-size: var(--text-xl);
   line-height: var(--leading-1\.3);
+  font-family: var(--font-sans);
 }
 
 #root {
