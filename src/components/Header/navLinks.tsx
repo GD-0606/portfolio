@@ -1,23 +1,20 @@
-import React from "react";
-import NavLink from "../Buttons/navLink";
-import { NavLinkProps, NavLinkVariant } from "@/types";
+import React from 'react';
+import NavLink from '../Buttons/navLink';
+import { NavLinkProps, NavLinkVariant } from '@/types';
 
-const NavLinks = (props: {
-  navLinks: NavLinkProps[];
-  resume: NavLinkProps;
-}) => {
+const NavLinks = (props: { navLinks: NavLinkProps[]; resume: NavLinkProps }) => {
   return (
-    <div id="navLinks" className="relative flex items-center">
-      <ol className="flex justify-between items-center">
+    <div id="navLinks" className="border relative flex justify-between gap-2">
+      <ol className="border border-red-900 flex justify-between items-center gap-1 text-xs">
         {props.navLinks.map((link, _ind) => (
-          <li key={link.id} className="relative mr-[5px] text-xs">
+          <li key={link.id} className="relative">
             <NavLink href={link.href} label={link.label}>
               {link.label}
             </NavLink>
           </li>
         ))}
       </ol>
-      <div className="resume">
+      <div className="border border-yellow-300">
         <NavLink
           href={props.resume.href}
           label={props.resume.label}

@@ -2,19 +2,19 @@
   "projects": [
     {
       "id": 1,
-      "title": "",
-      "description": "",
-      "tags": [],
-      "links": [],
-      "mainImageUrl": ""
+      "title": "Goudla Block Chain Project",
+      "description": "Led blockchain integration using test networks for cryptocurrency protocols.",
+      "tags": ["#Blockchain", "#Cryptocurrency", "#Testnet", "NodeJs", "MongoDB"],
+      "links": ["https://github.com/GD-0606/blockchain"],
+      "mainImageUrl": "/blockchain.jpg"
     },
     {
-      "id": 1,
-      "title": "",
-      "description": "",
-      "tags": [],
-      "links": [],
-      "mainImageUrl": ""
+      "id": 2,
+      "title": "Hatimi Hotel Management System",
+      "description": "Built a full-stack hotel booking platform with admin dashboard.",
+      "tags": ["#BookingSystem", "#HotelManagement", "#MERNStack", "NodeJs", "#PaymentGateway"],
+      "links": ["https://github.com/GD-0606/bookingServer"],
+      "mainImageUrl": "/hatimi.png"
     }
   ]
 }

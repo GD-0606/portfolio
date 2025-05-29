@@ -1,4 +1,4 @@
-import SectionWrapper from "@/components/Wrappers/section";
+import SectionWrapper from '@/components/Wrappers/section';
 
 export default function Home() {
   return (
