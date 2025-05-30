@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
   h1,
@@ -109,7 +109,7 @@ body {
 
 .counter-inc::before {
   counter-increment: linkitem;
-  content: "0" counter(linkitem) ". ";
+  content: '0' counter(linkitem) '. ';
   font-size: var(--text-xxs);
   color: var(--color-green);
   font-weight: 400;
@@ -121,7 +121,7 @@ body {
 
 .counter-inc-section-header::before {
   counter-increment: section;
-  content: "0" counter(section) ". ";
+  content: '0' counter(section) '. ';
   font-family: var(--font-mono);
   font-weight: 400;
   color: var(--color-green);
@@ -132,7 +132,7 @@ body {
 }
 
 .counter-inc-section-header::after {
-  content: "";
+  content: '';
   background-color: var(--color-lightest-navy);
   margin-left: 20px;
   position: relative;

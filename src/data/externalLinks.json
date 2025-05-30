@@ -1,0 +1,36 @@
+{
+  "externalLinks": [
+    {
+      "id": 1,
+      "label": "Github",
+      "href": "https://github.com/GD-0606/",
+      "imageUrl": "/github.svg",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "id": 2,
+      "label": "Linkedin",
+      "href": "https://www.linkedin.com/in/gopimuppuri/",
+      "imageUrl": "/linkedin.svg",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "id": 3,
+      "label": "HackerRank",
+      "href": "https://www.hackerrank.com/profile/muppurigopi117",
+      "imageUrl": "/hackerrank.svg",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "id": 4,
+      "label": "Linux",
+      "href": "https://www.linux.org/",
+      "imageUrl": "/linux.svg",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    }
+  ]
+}
