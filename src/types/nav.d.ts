@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type NavLinkVariant = 'default' | 'download' | 'logo';
+export type NavLinkVariant = 'default' | 'download' | 'logo' | 'custom';
 
 export interface NavLinkProps {
   id?: number;

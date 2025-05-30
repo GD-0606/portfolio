@@ -13,5 +13,19 @@
     "download": true,
     "target": "_blank",
     "rel": "noopener noreferrer"
+  },
+  "biglink": {
+    "label": "Check out my Course!",
+    "href": "https://github.com/GD-0606/",
+    "variant": "custom",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  "sayHello": {
+    "label": "Say Hello",
+    "href": "https://forms.gle/nJFTGzK8AwnjaCka7",
+    "variant": "custom",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
   }
 }

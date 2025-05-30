@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
   h1,
@@ -102,4 +102,42 @@ body {
   background-color: var(--color-dark-slate);
   border: 3px solid var(--color-navy);
   border-radius: 10px;
+}
+.counter-reset {
+  counter-reset: linkitem;
+}
+
+.counter-inc::before {
+  counter-increment: linkitem;
+  content: "0" counter(linkitem) ". ";
+  font-size: var(--text-xxs);
+  color: var(--color-green);
+  font-weight: 400;
+}
+
+.counter-reset-section-header {
+  counter-reset: section;
+}
+
+.counter-inc-section-header::before {
+  counter-increment: section;
+  content: "0" counter(section) ". ";
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--color-green);
+  margin-right: 10px;
+  font-size: clamp(var(--text-md), 3vw, var(--text-xl));
+  position: relative;
+  bottom: -4px;
+}
+
+.counter-inc-section-header::after {
+  content: "";
+  background-color: var(--color-lightest-navy);
+  margin-left: 20px;
+  position: relative;
+  top: 5px;
+  width: 300px;
+  height: 1px;
+  display: block;
 }
