@@ -7,5 +7,5 @@
     { "id": 5, "name": "React" },
     { "id": 6, "name": "Next.js" }
   ],
-  "imageUrl": "/personal.jpg"
+  "aboutImageUrl": "/personal.jpg"
 }
