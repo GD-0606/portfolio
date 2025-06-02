@@ -17,13 +17,160 @@
       "mainImageUrl": { "url": "/hatimi.png", "alt": "hatimi pic" }
     }
   ],
-  "boilerplates": [
+  "categories": [
     {
-      "id": 1,
-      "title": "",
-      "description": "",
-      "tags": [],
-      "links": []
+      "title": "Boilerplates",
+      "description": "Starter templates and boilerplates for fast project setup.",
+      "projects": [
+        {
+          "title": "MERN Starter Kit",
+          "description": "A ready-to-go boilerplate with React, Node, Express, MongoDB, and JWT authentication.",
+          "tech": ["React", "Node.js", "Express", "MongoDB", "JWT"],
+          "github": "https://github.com/yourusername/mern-starter",
+          "live": null
+        },
+        {
+          "title": "Next.js Auth Boilerplate",
+          "description": "Prebuilt auth flow with JWT, refresh tokens, and Tailwind for UI.",
+          "tech": ["Next.js", "TypeScript", "Tailwind", "JWT"],
+          "github": "https://github.com/yourusername/next-auth-boilerplate",
+          "live": null
+        }
+      ]
+    },
+    {
+      "title": "Learning Repositories",
+      "description": "Hands-on experiments and notes while learning new technologies.",
+      "projects": [
+        {
+          "title": "Docker Learning Playground",
+          "description": "Practice repos and notes for Docker and container orchestration.",
+          "tech": ["Docker", "Node.js"],
+          "github": "https://github.com/GD-0606/docker",
+          "live": null
+        },
+        {
+          "title": "CI/CD with GitHub Actions",
+          "description": "Automating Node.js build and deploy pipelines using GitHub Actions.",
+          "tech": ["GitHub Actions", "Node.js", "Docker"],
+          "github": "https://github.com/GD-0606/github-actions",
+          "live": null
+        }
+      ]
+    },
+    {
+      "title": "Reusable UI Components",
+      "description": "Custom React components designed for reuse across applications, focusing on media, interaction, and utility.",
+      "projects": [
+        {
+          "title": "Video Player",
+          "description": "A customizable video player built in React with support for controls, autoplay, and responsive design.",
+          "tech": ["React", "HTML5 Video", "CSS", "CSS MODULES"],
+          "github": "https://github.com/GD-0606/react-components/tree/main/src/components/videoPlayer",
+          "live": null
+        },
+        {
+          "title": "Music Player",
+          "description": "A lightweight music player with playlist support, seek bar, and audio visualization.",
+          "tech": ["React", "Audio API", "CSS", "CSS MODULES"],
+          "github": "https://github.com/GD-0606/react-components/tree/main/src/components/MusicPlayer",
+          "live": null
+        },
+        {
+          "title": "Countdown Timer",
+          "description": "A countdown component with hooks for callback events, interval control, and theming.",
+          "tech": ["React", "TypeScript", "CSS", "CSS MODULES"],
+          "github": "https://github.com/GD-0606/react-components/tree/main/src/components/CountDown",
+          "live": null
+        },
+        {
+          "title": "Bookmark Manager",
+          "description": "A bookmark component to save and manage links with tags, notes, and filters.",
+          "tech": ["React", "LocalStorage", "CSS", "CSS MODULES"],
+          "github": "https://github.com/GD-0606/react-components/tree/main/src/components/BookKeeper",
+          "live": null
+        }
+      ]
+    },
+    {
+      "title": "Node Servers",
+      "description": "Standalone backend APIs and services for real-world domains.",
+      "projects": [
+        {
+          "title": "Job Board API",
+          "description": "API for managing jobs, applications, and user roles.",
+          "tech": ["Node.js", "Express", "MongoDB", "JWT"],
+          "github": "https://github.com/GD-0606/job-server",
+          "live": null
+        },
+        {
+          "title": "Booking System API",
+          "description": "RESTful API for booking management with authentication and admin control.",
+          "tech": ["Node.js", "Express", "MongoDB"],
+          "github": "https://github.com/GD-0606/bookingServer",
+          "live": null
+        }
+      ]
+    },
+    {
+      "title": "Microservices",
+      "description": "Distributed services following the microservices architecture.",
+      "projects": [
+        {
+          "title": "mini-microservices",
+          "description": "Independent services for payments, orders, users, and inventory. Includes NATS for messaging.",
+          "tech": ["Node.js", "Docker", "MongoDB", "Event-bus", "Redis"],
+          "github": "https://github.com/GD-0606/mini-micro-srv",
+          "live": null
+        },
+        {
+          "title": "Ticketing Service",
+          "description": "Microservice for managing event tickets including creation, updating, and reservation with validation and event-driven communication.",
+          "tech": ["Node.js", "MongoDB", "NATS", "Express"],
+          "github": "https://github.com/GD-0606/microservices",
+          "live": null
+        }
+      ]
+    },
+    {
+      "title": "DevOps & Workflow Setup",
+      "description": "Tools and templates to build, deploy, and scale applications with confidence.",
+      "projects": [
+        {
+          "title": "Production Grade Workflow",
+          "description": "A complete setup for production-ready development with Docker, CI/CD, and scalable architecture patterns.",
+          "tech": ["Node.js", "Docker", "GitHub Actions", "Microservices"],
+          "github": "https://github.com/GD-0606/production-grade-workflow",
+          "live": null
+        }
+      ]
+    },
+    {
+      "title": "React Projects",
+      "description": "A collection of small to mid-size React applications showcasing form handling, state management, and component design.",
+      "projects": [
+        {
+          "title": "ToDo App",
+          "description": "A simple task manager with CRUD operations, local storage, and filter functionality.",
+          "tech": ["React", "Bootstrap5", "LocalStorage", "react-router-dom"],
+          "github": "https://github.com/GD-0606/TodoApp",
+          "live": null
+        },
+        {
+          "title": "Expense Tracker",
+          "description": "Tracks incomes and expenses with data visualization and persistent local storage.",
+          "tech": ["React", "Chart.js", "Tailwind CSS", "react-redux"],
+          "github": "https://github.com/GD-0606/ExpenseTracker",
+          "live": null
+        },
+        {
+          "title": "Quiz App",
+          "description": "A timed quiz application with multiple choice questions, result calculation, and retry logic.",
+          "tech": ["React", "Bootstrap5", "Next.js"],
+          "github": "https://github.com/GD-0606/QuizApp",
+          "live": null
+        }
+      ]
     }
   ]
 }

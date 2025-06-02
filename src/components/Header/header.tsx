@@ -10,7 +10,7 @@ const Header = () => {
   const { logo, navLinks, resume } = headerNavLinks;
 
   return (
-    <header className="backdrop-blur-[10px] w-full h-[100px] fixed top-0  px-[50px] z-20 text-light-slate font-mono font-semibold tracking-wide">
+    <header className="bg-header backdrop-blur-[10px] w-full h-[100px] fixed top-0  px-[50px] z-20 text-light-slate font-mono font-semibold tracking-wide">
       <nav className="relative w-full h-[100px] flex justify-between items-center">
         <Logo {...(logo as NavLinkProps)} />
         <NavLinks
