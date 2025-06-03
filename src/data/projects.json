@@ -4,7 +4,13 @@
       "id": 1,
       "title": "Goudla Block Chain Project",
       "description": "Led blockchain integration using test networks for cryptocurrency protocols.",
-      "tags": ["#Blockchain", "#Cryptocurrency", "#Testnet", "NodeJs", "MongoDB"],
+      "tags": [
+        { "id": 1, "name": "Blockchain" },
+        { "id": 2, "name": "Cryptocurrency" },
+        { "id": 3, "name": "Testnet" },
+        { "id": 4, "name": "NodeJs" },
+        { "id": 5, "name": "MongoDB" }
+      ],
       "links": ["https://github.com/GD-0606/blockchain"],
       "mainImageUrl": { "url": "/blockchain.jpg", "alt": "blockchain pic" }
     },
@@ -12,7 +18,13 @@
       "id": 2,
       "title": "Hatimi Hotel Management System",
       "description": "Built a full-stack hotel booking platform with admin dashboard.",
-      "tags": ["#BookingSystem", "#HotelManagement", "#MERNStack", "NodeJs", "#PaymentGateway"],
+      "tags": [
+        { "id": 1, "name": "BookingSystem" },
+        { "id": 1, "name": "HotelManagement" },
+        { "id": 3, "name": "MERNStack" },
+        { "id": 4, "name": "NodeJs" },
+        { "id": 5, "name": "PaymentGateway" }
+      ],
       "links": ["https://github.com/GD-0606/bookingServer"],
       "mainImageUrl": { "url": "/hatimi.png", "alt": "hatimi pic" }
     }

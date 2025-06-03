@@ -1,13 +1,10 @@
-import { SectionWrapperProps } from "@/types";
-import React from "react";
-import clsx from "clsx";
+import { SectionWrapperProps } from '@/types';
+import React from 'react';
+import clsx from 'clsx';
 const SectionWrapper = (props: SectionWrapperProps) => {
-  const { id, children, className = "" } = props;
-  const hasMaxWidth = className.includes("max-w");
-  const base = clsx(
-    "relative mx-auto w-full min-h-screen py-[100px]",
-    !hasMaxWidth && "max-w-[1000px]"
-  );
+  const { id, children, className = '' } = props;
+  const hasMaxWidth = className.includes('max-w');
+  const base = clsx('border relative mx-auto w-full min-h-screen py-[100px]', !hasMaxWidth && 'max-w-[1000px]');
 
   return (
     <section id={id} className={clsx(base, className)}>

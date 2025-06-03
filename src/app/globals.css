@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
   h1,
@@ -49,6 +49,7 @@
   --text-medium-heading: clamp(40px, 8vw, 60px);
   --text-h1-heading: clamp(var(--text-sm), 5vw, var(--text-md));
   --text-number-heading: clamp(26px, 5vw, var(--text-heading));
+  --text-w-h3-heading: clamp(24px, 5vw, 28px);
   --leading-*: initial;
   --leading-1.1: 1.1;
   --breakpoint-*: initial;
@@ -110,7 +111,7 @@ body {
 
 .counter-inc::before {
   counter-increment: linkitem;
-  content: "0" counter(linkitem) ". ";
+  content: '0' counter(linkitem) '. ';
   font-size: var(--text-xxs);
   color: var(--color-green);
   font-weight: 400;
@@ -122,7 +123,7 @@ body {
 
 .counter-inc-section-header::before {
   counter-increment: section;
-  content: "0" counter(section) ". ";
+  content: '0' counter(section) '. ';
   font-family: var(--font-mono);
   font-weight: 400;
   color: var(--color-green);
@@ -133,7 +134,7 @@ body {
 }
 
 .counter-inc-section-header::after {
-  content: "";
+  content: '';
   background-color: var(--color-lightest-navy);
   margin-left: 20px;
   position: relative;
@@ -153,7 +154,7 @@ body {
 }
 .about-image-wrapper::before,
 .about-image-wrapper::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -184,4 +185,77 @@ body {
 .about-image-wrapper:hover .img {
   filter: none;
   mix-blend-mode: normal;
+}
+
+#work article {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+#work article:nth-of-type(2n + 1) > div.content {
+  grid-column: 7/-1;
+  text-align: right;
+}
+#work article:nth-of-type(2n + 1) > div.content .tech-list {
+  justify-content: flex-end;
+}
+
+#work article:nth-of-type(2n + 1) > div.content .tech-list > li {
+  margin: 0px 0px 5px 20px;
+}
+
+#work article:nth-of-type(2n + 1) > div.content .links {
+  justify-content: end;
+  margin-left: 0px;
+  margin-right: -10px;
+}
+
+#work article:nth-of-type(2n + 1) > div.image {
+  grid-column: 1/8;
+}
+
+#work article > div.content {
+  grid-area: 1/1 / -1/7;
+  border: 1px solid green;
+  position: relative;
+}
+#work article > div.image {
+  grid-area: 1/6 / -1/-1;
+  border: 1px solid red;
+  position: relative;
+}
+
+#work article > div.content .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+}
+#work article > div.content .tech-list > li {
+  margin: 0px 20px 5px 0px;
+  color: var(--color-light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
+#work article > div.content .links {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -10px;
+  color: var(--color-lightest-slate);
+}
+#work article > div.content .links > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
