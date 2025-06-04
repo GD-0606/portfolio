@@ -5,3 +5,5 @@ export * from './Image/image';
 export * from './ListElement/listElement';
 export * from './Wrappers/section';
 export * from './Wrappers/sectionHeader';
+export * from './Project/projectItem';
+export * from './Wrappers/project';

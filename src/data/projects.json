@@ -20,7 +20,7 @@
       "description": "Built a full-stack hotel booking platform with admin dashboard.",
       "tags": [
         { "id": 1, "name": "BookingSystem" },
-        { "id": 1, "name": "HotelManagement" },
+        { "id": 2, "name": "HotelManagement" },
         { "id": 3, "name": "MERNStack" },
         { "id": 4, "name": "NodeJs" },
         { "id": 5, "name": "PaymentGateway" }

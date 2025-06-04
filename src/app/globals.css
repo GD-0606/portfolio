@@ -187,7 +187,7 @@ body {
   mix-blend-mode: normal;
 }
 
-#work article {
+#projects article {
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -196,40 +196,40 @@ body {
   margin-bottom: 100px;
 }
 
-#work article:nth-of-type(2n + 1) > div.content {
+#projects article:nth-of-type(2n + 1) > div.content {
   grid-column: 7/-1;
   text-align: right;
 }
-#work article:nth-of-type(2n + 1) > div.content .tech-list {
+#projects article:nth-of-type(2n + 1) > div.content .tech-list {
   justify-content: flex-end;
 }
 
-#work article:nth-of-type(2n + 1) > div.content .tech-list > li {
+#projects article:nth-of-type(2n + 1) > div.content .tech-list > li {
   margin: 0px 0px 5px 20px;
 }
 
-#work article:nth-of-type(2n + 1) > div.content .links {
+#projects article:nth-of-type(2n + 1) > div.content .links {
   justify-content: end;
   margin-left: 0px;
   margin-right: -10px;
 }
 
-#work article:nth-of-type(2n + 1) > div.image {
+#projects article:nth-of-type(2n + 1) > div.image {
   grid-column: 1/8;
 }
 
-#work article > div.content {
+#projects article > div.content {
   grid-area: 1/1 / -1/7;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: relative;
 }
-#work article > div.image {
+#projects article > div.image {
   grid-area: 1/6 / -1/-1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
 }
 
-#work article > div.content .tech-list {
+#projects article > div.content .tech-list {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -237,7 +237,7 @@ body {
   margin: 25px 0px 10px;
   padding: 0px;
 }
-#work article > div.content .tech-list > li {
+#projects article > div.content .tech-list > li {
   margin: 0px 20px 5px 0px;
   color: var(--color-light-slate);
   font-family: var(--font-mono);
@@ -245,7 +245,7 @@ body {
   white-space: nowrap;
 }
 
-#work article > div.content .links {
+#projects article > div.content .links {
   display: flex;
   position: relative;
   align-items: center;
@@ -253,9 +253,60 @@ body {
   margin-left: -10px;
   color: var(--color-lightest-slate);
 }
-#work article > div.content .links > a {
+#projects article > div.content .links > a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+
+#work .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin: 50px 0px 0px;
+  position: relative;
+}
+
+#work .wrapper .project-item {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: 4px;
+  background-color: var(--color-light-navy);
+  cursor: pointer;
+}
+
+#work .wrapper .project-item .project-top {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin-bottom: 35px;
+}
+#work .wrapper .project-item .links {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 15px;
+}
+
+#work .wrapper .project-item .project-tech-list {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 20px 0px 0px;
+}
+
+#work .wrapper .project-item .project-tech-list > li {
+  margin-right: 15px;
 }
