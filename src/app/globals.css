@@ -105,6 +105,8 @@ body {
   border: 3px solid var(--color-navy);
   border-radius: 10px;
 }
+
+
 .counter-reset {
   counter-reset: linkitem;
 }

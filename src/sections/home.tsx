@@ -1,4 +1,5 @@
 import NavLink from '@/components/Buttons/navLink';
+import Text from '@/components/UI/text';
 import SectionWrapper from '@/components/Wrappers/section';
 import { headerNavLinks } from '@/data';
 import { NavLinkVariant } from '@/types';
