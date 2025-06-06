@@ -106,7 +106,6 @@ body {
   border-radius: 10px;
 }
 
-
 .counter-reset {
   counter-reset: linkitem;
 }
@@ -311,4 +310,34 @@ body {
 
 #work .wrapper .project-item .project-tech-list > li {
   margin-right: 15px;
+}
+
+#certificates .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin: 50px 0px 0px;
+  position: relative;
+}
+#certificates .wrapper .certificate-item {
+  background-color: var(--color-light-navy);
+  position: relative;
+}
+#certificates .wrapper .certificate-item .icon {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#certificates .wrapper .certificate-item .corner {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, var(--color-dark-navy) 50%, var(--color-navy) 50%);
+}
+
+#certificates .wrapper .certificate-item .content {
+  position: relative;
 }

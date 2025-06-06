@@ -1,4 +1,5 @@
 import About from '@/sections/about';
+import Certificates from '@/sections/certificates';
 import Contact from '@/sections/contact';
 import Exp from '@/sections/exp';
 import Home from '@/sections/home';
@@ -14,6 +15,7 @@ export default function Sections() {
       <Exp />
       <Projects />
       <Work />
+      <Certificates />
       <Contact />
     </React.Fragment>
   );

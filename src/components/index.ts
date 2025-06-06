@@ -7,3 +7,4 @@ export * from './Wrappers/section';
 export * from './Wrappers/sectionHeader';
 export * from './Project/projectItem';
 export * from './Wrappers/project';
+export * from './Certificate/certificateItem';
