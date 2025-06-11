@@ -1,5 +1,5 @@
-import SectionWrapper from '@/components/Wrappers/section';
-import SectionHeader from '@/components/Wrappers/sectionHeader';
+import SectionWrapper from '@/components/layout/Wrappers/section';
+import SectionHeader from '@/components/layout/Wrappers/sectionHeader';
 import { projectsData } from '@/data';
 import Image from 'next/image';
 import React from 'react';

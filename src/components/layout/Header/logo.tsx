@@ -1,6 +1,6 @@
 import React from 'react';
-import NavLink from '../Buttons/navLink';
-import Loader from '../Loaders/loader';
+import NavLink from '../../Buttons/navLink';
+import Loader from '../../Loaders/loader';
 import { NavLinkProps, NavLinkVariant } from '@/types';
 
 const Logo = (props: NavLinkProps) => {

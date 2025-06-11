@@ -1,7 +1,7 @@
 import CertificateItem from '@/components/Certificate/certificateItem';
-import CertificateWrapper from '@/components/Wrappers/certificate';
-import SectionWrapper from '@/components/Wrappers/section';
-import SectionHeader from '@/components/Wrappers/sectionHeader';
+import CertificateWrapper from '@/components/layout/Wrappers/certificate';
+import SectionWrapper from '@/components/layout/Wrappers/section';
+import SectionHeader from '@/components/layout/Wrappers/sectionHeader';
 import React from 'react';
 
 const Certificates = () => {

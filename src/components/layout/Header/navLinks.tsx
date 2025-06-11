@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLink from '../Buttons/navLink';
+import NavLink from '../../Buttons/navLink';
 import { NavLinkProps, NavLinkVariant } from '@/types';
 
 const NavLinks = (props: { navLinks: NavLinkProps[]; resume: NavLinkProps }) => {

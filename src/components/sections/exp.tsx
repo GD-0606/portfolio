@@ -1,6 +1,6 @@
 import ListItemElement from '@/components/ListElement/listElement';
-import SectionWrapper from '@/components/Wrappers/section';
-import SectionHeader from '@/components/Wrappers/sectionHeader';
+import SectionWrapper from '@/components/layout/Wrappers/section';
+import SectionHeader from '@/components/layout/Wrappers/sectionHeader';
 import React from 'react';
 
 const Exp = () => {
