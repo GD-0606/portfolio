@@ -1,6 +1,6 @@
 import ProjectItem from '@/components/Project/projectItem';
-import ProjectWrapper from '@/components/layout/Wrappers/project';
-import SectionWrapper from '@/components/layout/Wrappers/section';
+import ProjectWrapper from '@/components/layout/wrapper/project';
+import SectionWrapper from '@/components/layout/wrapper/section';
 import React from 'react';
 
 const Work = () => {

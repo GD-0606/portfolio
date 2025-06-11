@@ -1,5 +1,5 @@
 import { TextHeadingVariants, textHeadingVariants } from '@/styles/text';
-import { cn } from '@/utils/mergeConflicts';
+import { cn } from '@/utils/mergetwConflicts';
 import React, { ComponentPropsWithoutRef, ElementType } from 'react';
 
 type TextProps<T extends ElementType> = {

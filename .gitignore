@@ -42,3 +42,5 @@ next-env.d.ts
 
 
 generate.fonts.mjs
+
+test.js

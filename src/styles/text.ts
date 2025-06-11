@@ -8,11 +8,11 @@ export const textHeadingVariants = cva('', {
       h3: 'mb-[10px] font-semibold text-lightest-slate text-number-heading',
       h4: 'mb-[10px] font-semibold text-lightest-slate text-w-h3-heading',
       h5: 'mb-[10px] font-semibold text-lightest-slate text-h1-heading',
-      
     }
   },
   defaultVariants: {
     variant: 'h1'
   }
 });
+
 export type TextHeadingVariants = VariantProps<typeof textHeadingVariants>;
