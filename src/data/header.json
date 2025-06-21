@@ -9,7 +9,7 @@
   "resume": {
     "label": "Resume",
     "href": "/resume.pdf",
-    "variant": "download",
+    "variant": "custom",
     "download": true,
     "target": "_blank",
     "rel": "noopener noreferrer"

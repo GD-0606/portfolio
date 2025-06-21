@@ -1,30 +1,24 @@
 import React from 'react';
-import NavLink from '../../Buttons/navLink';
-import { NavLinkProps, NavLinkVariant } from '@/types';
+import { HeaderData } from '@/types';
+import CustomLink from '@/components/ui/link';
+import styles from './header.module.css';
 
-const NavLinks = (props: { navLinks: NavLinkProps[]; resume: NavLinkProps }) => {
+const NavLinks = (props: { navLinks: HeaderData[]; resume: HeaderData }) => {
   return (
-    <div id="navLinks" className="relative flex justify-between items-center gap-2 text-xs">
-      <ol className="flex justify-between items-center gap-1 counter-reset">
+    <div id="navLinks" className="max-tabletL:hidden border relative flex justify-between items-center gap-5 text-xs">
+      <ol className={`flex justify-between items-center gap-5 ${styles.counter_reset}`}>
         {props.navLinks.map((link, _ind) => (
-          <li key={link.id} className="relative">
-            <NavLink href={link.href} label={link.label}>
+          <li key={link.id} className="relative border border-amber-500">
+            <CustomLink href={link.href} className={`${styles.counter_inc}`}>
               {link.label}
-            </NavLink>
+            </CustomLink>
           </li>
         ))}
       </ol>
       <div className="">
-        <NavLink
-          href={props.resume.href}
-          label={props.resume.label}
-          download={props.resume.download}
-          rel={props.resume.rel}
-          target={props.resume.target}
-          variant={props.resume.variant as NavLinkVariant}
-        >
+        <CustomLink href={props.resume.href} intent={props.resume.variant} download={true} target="_blank" rel="noopener noreferrer">
           {props.resume.label}
-        </NavLink>
+        </CustomLink>
       </div>
     </div>
   );

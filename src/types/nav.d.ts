@@ -12,3 +12,10 @@ export interface NavLinkProps {
   rel?: string;
   children: React.ReactNode;
 }
+
+export interface HeaderData {
+  id?: number;
+  href: string;
+  label: string;
+  variant: 'default' | 'logo' | 'custom';
+}

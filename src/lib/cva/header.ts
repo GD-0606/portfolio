@@ -1,6 +1,7 @@
 import { cva } from 'class-variance-authority';
 
 export const headerStyles = cva([
+  'border',
   'bg-header',
   'backdrop-blur-[10px]',
   'w-full',

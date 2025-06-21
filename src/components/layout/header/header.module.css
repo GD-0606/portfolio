@@ -1,0 +1,51 @@
+.counter_reset {
+  counter-reset: linkitem;
+}
+
+.counter_inc::before {
+  counter-increment: linkitem;
+  content: '0' counter(linkitem) '. ';
+  font-size: var(--text-xxs);
+  color: var(--color-green);
+  font-weight: 400;
+}
+
+.ham_box {
+  position: relative;
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+}
+.ham_box_inner {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 4px;
+  background-color: var(--color-green);
+  width: 30px;
+  height: 2px;
+}
+.ham_box_inner::before,
+.ham_box_inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: auto;
+  right: 0;
+  width: 30px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-green);
+}
+
+.ham_box_inner::before {
+  width: 120%;
+  top: -10px;
+  opacity: 1;
+}
+
+.ham_box_inner::after {
+  width: 80%;
+  bottom: -10px;
+  opacity: 1;
+}

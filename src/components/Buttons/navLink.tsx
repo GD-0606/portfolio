@@ -5,7 +5,7 @@ import React from 'react';
 const NavLink = ({ href, label, variant = 'default', rel, target, download = false, children }: NavLinkProps) => {
   const variants: Record<NavLinkVariant, string> = {
     default: 'counter-inc p-2 inline-block',
-    download: 'border-1 border-green rounded px-4 py-2.5 inline-block text-green bg-transparent',
+    download: 'border-1 border-green rounded px-4 py-3.5 inline-block text-green bg-transparent',
     logo: '',
     custom: 'border-1 border-green rounded px-4 py-2.5 text-green bg-transparent text-sm inline-block font-mono mt-[50px]'
   };

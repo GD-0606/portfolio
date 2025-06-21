@@ -1,15 +1,15 @@
 import React from 'react';
-import NavLink from '../../Buttons/navLink';
 import Loader from '../../Loaders/loader';
-import { NavLinkProps, NavLinkVariant } from '@/types';
+import { HeaderData } from '@/types';
+import CustomLink from '@/components/ui/link';
 
-const Logo = (props: NavLinkProps) => {
-  const { href, label, variant } = props;
+const Logo = (props: HeaderData) => {
+  const { href, variant } = props;
   return (
-    <div id="logo" className="relative">
-      <NavLink href={`${href}`} label={`${label}`} variant={variant as NavLinkVariant}>
+    <div id="logo" className="relative border">
+      <CustomLink href={`${href}`} intent={variant}>
         <Loader />
-      </NavLink>
+      </CustomLink>
     </div>
   );
 };

@@ -1,20 +1,14 @@
-import { LinksVariantProps, linkVariants } from '@/lib/cva/links';
+import { linkVariants } from '@/lib/cva/links';
+import { CustomLinkProps } from '@/types/link';
 import { cn } from '@/utils/mergetwConflicts';
 import Link from 'next/link';
 import React from 'react';
 
-type LinkProps = {
-  href: string;
-  className?: string;
-  children: React.ReactNode;
-} & LinksVariantProps &
-  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'className'>;
-
-const CustomLink = (props: LinkProps) => {
+const CustomLink = (props: CustomLinkProps) => {
   const { href, children, className, intent, ...rest } = props;
   return (
-    <Link passHref legacyBehavior href={href}>
-      <a className={cn(linkVariants({ intent }), className)} {...rest}>{children}</a>
+    <Link href={href} className={cn(linkVariants({ intent }), className)} {...rest}>
+      {children}
     </Link>
   );
 };

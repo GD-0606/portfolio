@@ -3,6 +3,7 @@ import SectionWrapper from '@/components/layout/wrapper/section';
 import { headerNavLinks } from '@/data';
 import { NavLinkVariant } from '@/types';
 import React from 'react';
+import CustomLink from '../ui/link';
 
 const Home = () => {
   const { biglink } = headerNavLinks;
@@ -31,6 +32,9 @@ const Home = () => {
             {label}
           </NavLink>
         </div>
+        <CustomLink href="/" intent={'custom'}>
+          test
+        </CustomLink>
       </SectionWrapper>
     </React.Fragment>
   );
