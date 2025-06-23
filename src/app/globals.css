@@ -63,7 +63,9 @@
   --breakpoint-desktopM: 1280px;
   --breakpoint-desktopL: 1536px;
   --ease-easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+
   --shadow-custom1: 3px 3px 0 0 var(--color-green);
+  --shadow-custom2: -10px 0px 30px -15px var(--color-navy-shadow);
   /* --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
 

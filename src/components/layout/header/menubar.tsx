@@ -1,13 +1,17 @@
 import React from 'react';
 import styles from './header.module.css';
-const Menubar = () => {
+import MenuIcon from '@/components/Icons/menu';
+import CloseIcon from '@/components/Icons/close';
+const Menubar = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean; setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
   return (
-    <div id="menu" className="hidden max-tabletL:block">
+    <div id={styles.menu} className="hidden max-tabletL:block z-10">
       <div>
-        <button>
-          <div className={`${styles.ham_box} border`}>
-            <div className={`${styles.ham_box_inner}`}></div>
-          </div>
+        <button
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
+          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
     </div>
