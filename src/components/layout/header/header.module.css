@@ -16,3 +16,7 @@
   padding: 15px;
   margin-right: -15px;
 }
+
+.blur {
+  overflow-y: hidden;
+}

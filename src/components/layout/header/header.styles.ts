@@ -26,7 +26,7 @@ export const NavLinkContainer = cva(' relative flex justify-between items-center
 export const NavLinkItem1 = cva('relative flex justify-between items-center gap-5 ', {
   variants: {
     isMenuOpen: {
-      true: 'w-10/12 h-10/12 flex-col bg-lightest-navy',
+      true: 'w-8/12 h-8/12 flex-col bg-lightest-navy',
       false: ''
     }
   }
@@ -44,7 +44,7 @@ export const NavLinkItem1ChildItem = cva('relative', {
 export const NavLinkItem2 = cva('', {
   variants: {
     isMenuOpen: {
-      true: 'w-10/12  h-2/12  flex justify-center items-center bg-lightest-navy',
+      true: 'w-8/12  h-4/12  flex justify-center items-center bg-lightest-navy',
       false: ''
     }
   }
