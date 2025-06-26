@@ -1,13 +1,11 @@
-import NavLink from '@/components/Buttons/navLink';
 import SectionWrapper from '@/components/layout/wrapper/section';
 import { headerNavLinks } from '@/data';
-import { NavLinkVariant } from '@/types';
 import React from 'react';
 import CustomLink from '../ui/link';
 
 const Home = () => {
   const { biglink } = headerNavLinks;
-  const { href, label, rel, target, variant } = biglink;
+  const { href, label, variant } = biglink;
   return (
     <React.Fragment>
       <SectionWrapper id="home">
@@ -21,20 +19,17 @@ const Home = () => {
           <h3 className="text-big-heading mt-[5px] text-slate leading-[0.9]">I build things for the web.</h3>
         </div>
         <div className="relative">
-          <p className="mt-[40px] w-8/12">
+          <p className="my-[40px] w-8/12">
             MERN stack developer with 2+ years of experience in building scalable web applications and APIs.Proficient in <span>Node.js</span> ,
             <span>React.js</span> ,<span>MongoDB</span> and <span>Express.js</span>. Strong understanding of RESTFUL architecture microservices and
             cloud-native development. Passionate about writing clean code, learning new technologies and delivering user-centered solutions.
           </p>
         </div>
         <div>
-          <NavLink href={href} rel={rel} target={target} label={label} variant={variant as NavLinkVariant}>
+          <CustomLink href={href} target="_blank" rel="noopener noreferrer" intent={variant as 'custom'}>
             {label}
-          </NavLink>
+          </CustomLink>
         </div>
-        <CustomLink href="/" intent={'custom'}>
-          test
-        </CustomLink>
       </SectionWrapper>
     </React.Fragment>
   );

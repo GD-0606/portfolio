@@ -1,8 +1,7 @@
-import NavLink from '@/components/Buttons/navLink';
 import SectionWrapper from '@/components/layout/wrapper/section';
 import { headerNavLinks } from '@/data';
-import { NavLinkVariant } from '@/types';
 import React from 'react';
+import CustomLink from '../ui/link';
 
 const Contact = () => {
   const { sayHello } = headerNavLinks;
@@ -15,16 +14,10 @@ const Contact = () => {
           Although I&rsquo;m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say
           hi, I&rsquo;ll try my best to get back to you!
         </p>
-        <div>
-          <NavLink
-            href={sayHello.href}
-            rel={sayHello.rel}
-            target={sayHello.target}
-            label={sayHello.label}
-            variant={sayHello.variant as NavLinkVariant}
-          >
+        <div className="my-[10px]">
+          <CustomLink href={sayHello.href} target="_blank" rel="noopener noreferrer" intent={sayHello.variant as 'custom'}>
             {sayHello.label}
-          </NavLink>
+          </CustomLink>
         </div>
       </SectionWrapper>
     </React.Fragment>
