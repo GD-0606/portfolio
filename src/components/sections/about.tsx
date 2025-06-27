@@ -11,7 +11,7 @@ const About = () => {
     <React.Fragment>
       <SectionWrapper id="about" className="max-w-[900px]">
         <SectionHeader value="About Me" />
-        <div className="relative grid grid-cols-[3fr_2fr] gap-[50px]">
+        <div className="relative grid grid-cols-[3fr_2fr] max-tabletL:grid-cols-[1fr] gap-[50px]  ">
           <div className="relative">
             <div>
               <p className="mb-[20px]">
